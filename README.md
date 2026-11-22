@@ -1,5 +1,7 @@
 # grounded-rag-eval
 
+[![ci](https://github.com/locquangnguyen8/grounded-rag-eval/actions/workflows/ci.yml/badge.svg)](https://github.com/locquangnguyen8/grounded-rag-eval/actions/workflows/ci.yml)
+
 A retrieval-augmented question-answering service built around one rule: **an answer that cannot be traced to a source should not be shipped.**
 
 Most RAG demos stop at "it answers questions". This one covers what makes a RAG system safe to put in front of users:
