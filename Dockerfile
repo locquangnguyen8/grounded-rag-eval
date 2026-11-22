@@ -1,6 +1,7 @@
 FROM python:3.12-slim
 
-ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 \n    GRAG_CORPUS_DIR=/app/data/corpus GRAG_TRACE_LOG=/app/logs/traces.jsonl GRAG_FEEDBACK_LOG=/app/logs/feedback.jsonl
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 \
+    GRAG_CORPUS_DIR=/app/data/corpus GRAG_TRACE_LOG=/app/logs/traces.jsonl GRAG_FEEDBACK_LOG=/app/logs/feedback.jsonl
 WORKDIR /app
 
 COPY pyproject.toml README.md ./
