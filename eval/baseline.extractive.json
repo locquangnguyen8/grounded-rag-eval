@@ -1,0 +1,10 @@
+{
+  "cases": 36,
+  "retrieval_recall_at_k": 1.0,
+  "mrr": 0.9833,
+  "answer_accuracy": 0.8333,
+  "fact_coverage": 0.8333,
+  "citation_validity": 1.0,
+  "correct_abstention_rate": 0.8333,
+  "answered_rate": 1.0
+}

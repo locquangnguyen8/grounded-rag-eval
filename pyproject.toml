@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grounded-rag-eval"
+version = "0.1.0"
+description = "Retrieval-augmented QA with enforced citations, abstention, tracing and an evaluation release gate."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["fastapi>=0.110", "uvicorn>=0.29", "pydantic>=2.6"]
+
+[project.optional-dependencies]
+claude = ["anthropic>=1.0"]
+dev = ["pytest>=8,<9", "httpx2", "ruff>=0.5"]
+
+[project.scripts]
+grounded-rag = "grounded_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]  # the formatter owns line length; prompts stay readable

@@ -1,0 +1,36 @@
+{"id": "q01", "question": "When did the Harbourline Estuary Monitoring Program start operating?", "answerable": true, "expected_docs": ["program_overview"], "required_facts": ["July 2021"]}
+{"id": "q02", "question": "How many monitoring stations does HEMP have?", "answerable": true, "expected_docs": ["program_overview"], "required_facts": ["14"]}
+{"id": "q03", "question": "Which estuaries does the program monitor?", "answerable": true, "expected_docs": ["program_overview"], "required_facts": ["Merrin", "Kallow", "Tasset"]}
+{"id": "q04", "question": "How often do field technicians visit each station?", "answerable": true, "expected_docs": ["program_overview", "sensor_network"], "required_facts": ["21 days"]}
+{"id": "q05", "question": "How often do sondes record a reading?", "answerable": true, "expected_docs": ["sensor_network"], "required_facts": ["15 minutes"]}
+{"id": "q06", "question": "How are readings sent to the central database?", "answerable": true, "expected_docs": ["sensor_network"], "required_facts": ["LoRaWAN"]}
+{"id": "q07", "question": "How many days of readings can a sonde store if the telemetry link fails?", "answerable": true, "expected_docs": ["sensor_network"], "required_facts": ["30 days"]}
+{"id": "q08", "question": "How often are dissolved oxygen sensors recalibrated?", "answerable": true, "expected_docs": ["sensor_network"], "required_facts": ["42 days"]}
+{"id": "q09", "question": "What is the main cause of sensor drift?", "answerable": true, "expected_docs": ["sensor_network"], "required_facts": ["Biofouling"]}
+{"id": "q10", "question": "What does the flatline check look for?", "answerable": true, "expected_docs": ["data_quality"], "required_facts": ["six identical"]}
+{"id": "q11", "question": "What does quality flag 4 mean?", "answerable": true, "expected_docs": ["data_quality"], "required_facts": ["4 means bad"]}
+{"id": "q12", "question": "How quickly are suspect or bad readings manually reviewed?", "answerable": true, "expected_docs": ["data_quality"], "required_facts": ["48 hours"]}
+{"id": "q13", "question": "How much rainfall triggers a harvest area closure?", "answerable": true, "expected_docs": ["harvest_closure_rules"], "required_facts": ["30 mm"]}
+{"id": "q14", "question": "What salinity level triggers a closure?", "answerable": true, "expected_docs": ["harvest_closure_rules"], "required_facts": ["22 PSU", "two consecutive days"]}
+{"id": "q15", "question": "What E. coli result is needed before a closed area can reopen?", "answerable": true, "expected_docs": ["harvest_closure_rules"], "required_facts": ["230"]}
+{"id": "q16", "question": "Who makes the final closure decision?", "answerable": true, "expected_docs": ["harvest_closure_rules"], "required_facts": ["food authority"]}
+{"id": "q17", "question": "What type of model is used to forecast closure risk?", "answerable": true, "expected_docs": ["forecasting_model"], "required_facts": ["gradient-boosted"]}
+{"id": "q18", "question": "What balanced accuracy did the forecasting model reach on the backtest?", "answerable": true, "expected_docs": ["forecasting_model"], "required_facts": ["0.78"]}
+{"id": "q19", "question": "When is the forecasting model retrained early?", "answerable": true, "expected_docs": ["forecasting_model"], "required_facts": ["0.70"]}
+{"id": "q20", "question": "What spatial resolution does Sentinel-2 provide?", "answerable": true, "expected_docs": ["satellite_data"], "required_facts": ["10 m"]}
+{"id": "q21", "question": "Which satellite images are discarded?", "answerable": true, "expected_docs": ["satellite_data"], "required_facts": ["40%"]}
+{"id": "q22", "question": "What dissolved oxygen level is treated as hypoxic?", "answerable": true, "expected_docs": ["dissolved_oxygen_alerts", "glossary"], "required_facts": ["2 mg/L"]}
+{"id": "q23", "question": "Which estuary has the most frequent low-oxygen events?", "answerable": true, "expected_docs": ["dissolved_oxygen_alerts"], "required_facts": ["Tasset"]}
+{"id": "q24", "question": "When is the weekly water-quality bulletin published?", "answerable": true, "expected_docs": ["stakeholder_reporting"], "required_facts": ["Monday"]}
+{"id": "q25", "question": "How long did the Merrin closure last after the March 2024 flood?", "answerable": true, "expected_docs": ["flood_event_2024"], "required_facts": ["19 days"]}
+{"id": "q26", "question": "How much rain fell on the Merrin catchment in March 2024?", "answerable": true, "expected_docs": ["flood_event_2024"], "required_facts": ["148 mm"]}
+{"id": "q27", "question": "Under what licence is quality-controlled data published?", "answerable": true, "expected_docs": ["data_access_policy"], "required_facts": ["CC BY 4.0"]}
+{"id": "q28", "question": "How long are raw readings held before public release?", "answerable": true, "expected_docs": ["data_access_policy"], "required_facts": ["30 days"]}
+{"id": "q29", "question": "What is the API rate limit per key?", "answerable": true, "expected_docs": ["data_platform"], "required_facts": ["60 requests per minute"]}
+{"id": "q30", "question": "Which database stores HEMP readings?", "answerable": true, "expected_docs": ["data_platform"], "required_facts": ["TimescaleDB"]}
+{"id": "u01", "question": "What is the annual budget of the monitoring program?", "answerable": false, "expected_docs": [], "required_facts": []}
+{"id": "u02", "question": "Which company manufactures the sondes?", "answerable": false, "expected_docs": [], "required_facts": []}
+{"id": "u03", "question": "How many oysters are harvested each year in the Kallow estuary?", "answerable": false, "expected_docs": [], "required_facts": []}
+{"id": "u04", "question": "What programming language is the forecasting model written in?", "answerable": false, "expected_docs": [], "required_facts": []}
+{"id": "u05", "question": "Who is the current program manager?", "answerable": false, "expected_docs": [], "required_facts": []}
+{"id": "u06", "question": "What was the highest water temperature recorded in 2023?", "answerable": false, "expected_docs": [], "required_facts": []}
