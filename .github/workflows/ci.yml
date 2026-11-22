@@ -43,3 +43,6 @@ jobs:
           for i in $(seq 1 20); do curl -fs localhost:8000/health && break; sleep 1; done
           curl -fs -X POST localhost:8000/ask -H 'content-type: application/json' \
             -d '{"question":"How often do sondes record a reading?"}' | grep -q '15 minutes'
+      - name: Container logs
+        if: failure()
+        run: docker logs api
